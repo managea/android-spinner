@@ -28,11 +28,17 @@ public class NameValueSpinnerAdapter extends ArrayAdapter<NameValue> {
         this.layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
+    /**
+     * Should override this method if you need to use a custom view.
+     */
     @Override
     public View getDropDownView(int position, View convertView, ViewGroup parent) {
         return getView(position, convertView, parent);
     }
 
+    /**
+     * Should override this method if you need to use a custom view.
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
